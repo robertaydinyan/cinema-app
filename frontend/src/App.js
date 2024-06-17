@@ -50,7 +50,7 @@ const App = () => {
                 />
                 <Route
                     exact
-                    path="/admin/room/:roomID"
+                    path="/admin/rooms/:roomID"
                     element={
                         <PrivateRoute>
                             <RoomPage />

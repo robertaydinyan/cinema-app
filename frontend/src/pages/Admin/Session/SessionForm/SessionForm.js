@@ -37,7 +37,7 @@ function SessionForm({ rooms, movies, updateSessions }) {
         e.preventDefault();
         const sessionData = {
             room_id: selectedRoom.value,
-            date: moment.utc(selectedDate).format('YYYY-MM-DD'),
+            date: moment(selectedDate).utc().format('YYYY-MM-DD'),
             time_slot_id: selectedTimeSlot.value,
             movie_id: selectedMovie.value
         };

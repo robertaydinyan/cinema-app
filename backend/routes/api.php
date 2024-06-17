@@ -29,12 +29,5 @@ Route::prefix('rooms')->group(function () {
 });
 
 Route::get('time-slots', [TimeSlotController::class, 'search']);
-// Route::get('seats', [SeatController::class, 'search']);
 Route::get('/books/by-time-slot/{time_slot_id}', [BookController::class, 'getByTimeSlot']);
-
 Route::post('/books/book', [BookController::class, 'bookPlace']);
-
-// Route::middleware('auth:sanctum')->group(function () {
-//     Route::apiResource('products', ProductController::class);
-// });
-
